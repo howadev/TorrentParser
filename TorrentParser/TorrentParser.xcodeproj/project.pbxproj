@@ -416,6 +416,7 @@
 				DEVELOPMENT_TEAM = 7B976PU7W8;
 				INFOPLIST_FILE = TorrentParser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.howardli.TorrentParser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -429,6 +430,7 @@
 				DEVELOPMENT_TEAM = 7B976PU7W8;
 				INFOPLIST_FILE = TorrentParser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.howardli.TorrentParser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
