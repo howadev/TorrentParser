@@ -14,6 +14,22 @@
 		7FD90C671E60E84600DF226B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD90C651E60E84600DF226B /* Main.storyboard */; };
 		7FD90C721E60E84600DF226B /* TorrentParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD90C711E60E84600DF226B /* TorrentParserTests.m */; };
 		7FD90C7D1E60E84600DF226B /* TorrentParserUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD90C7C1E60E84600DF226B /* TorrentParserUITests.m */; };
+		7FD90C8C1E60EDCA00DF226B /* TRPParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD90C8B1E60EDCA00DF226B /* TRPParser.m */; };
+		7FD90C8D1E60EDCA00DF226B /* TRPParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD90C8B1E60EDCA00DF226B /* TRPParser.m */; };
+		7FD90C901E60EE2F00DF226B /* TRPTorrent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD90C8F1E60EE2F00DF226B /* TRPTorrent.m */; };
+		7FD90C911E60EE2F00DF226B /* TRPTorrent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD90C8F1E60EE2F00DF226B /* TRPTorrent.m */; };
+		7FD90C951E611A1000DF226B /* TRPFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD90C941E611A1000DF226B /* TRPFile.m */; };
+		7FD90C961E611A1000DF226B /* TRPFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD90C941E611A1000DF226B /* TRPFile.m */; };
+		7FD90C9B1E612CA600DF226B /* TRPString.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD90C9A1E612CA600DF226B /* TRPString.m */; };
+		7FD90C9C1E612CA600DF226B /* TRPString.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD90C9A1E612CA600DF226B /* TRPString.m */; };
+		7FD90C9F1E612CB500DF226B /* TRPInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD90C9E1E612CB500DF226B /* TRPInteger.m */; };
+		7FD90CA01E612CB500DF226B /* TRPInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD90C9E1E612CB500DF226B /* TRPInteger.m */; };
+		7FD90CA31E612CC100DF226B /* TRPList.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD90CA21E612CC100DF226B /* TRPList.m */; };
+		7FD90CA41E612CC100DF226B /* TRPList.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD90CA21E612CC100DF226B /* TRPList.m */; };
+		7FD90CA71E612CD300DF226B /* TRPDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD90CA61E612CD300DF226B /* TRPDictionary.m */; };
+		7FD90CA81E612CD300DF226B /* TRPDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD90CA61E612CD300DF226B /* TRPDictionary.m */; };
+		7FD90CAC1E61480B00DF226B /* TRPElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD90CAB1E61480B00DF226B /* TRPElement.m */; };
+		7FD90CAD1E61480B00DF226B /* TRPElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD90CAB1E61480B00DF226B /* TRPElement.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +65,22 @@
 		7FD90C781E60E84600DF226B /* TorrentParserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TorrentParserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD90C7C1E60E84600DF226B /* TorrentParserUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TorrentParserUITests.m; sourceTree = "<group>"; };
 		7FD90C7E1E60E84600DF226B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FD90C8A1E60EDCA00DF226B /* TRPParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRPParser.h; sourceTree = "<group>"; };
+		7FD90C8B1E60EDCA00DF226B /* TRPParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRPParser.m; sourceTree = "<group>"; };
+		7FD90C8E1E60EE2F00DF226B /* TRPTorrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRPTorrent.h; sourceTree = "<group>"; };
+		7FD90C8F1E60EE2F00DF226B /* TRPTorrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRPTorrent.m; sourceTree = "<group>"; };
+		7FD90C931E611A1000DF226B /* TRPFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRPFile.h; sourceTree = "<group>"; };
+		7FD90C941E611A1000DF226B /* TRPFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRPFile.m; sourceTree = "<group>"; };
+		7FD90C991E612CA600DF226B /* TRPString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRPString.h; sourceTree = "<group>"; };
+		7FD90C9A1E612CA600DF226B /* TRPString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRPString.m; sourceTree = "<group>"; };
+		7FD90C9D1E612CB500DF226B /* TRPInteger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRPInteger.h; sourceTree = "<group>"; };
+		7FD90C9E1E612CB500DF226B /* TRPInteger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRPInteger.m; sourceTree = "<group>"; };
+		7FD90CA11E612CC100DF226B /* TRPList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRPList.h; sourceTree = "<group>"; };
+		7FD90CA21E612CC100DF226B /* TRPList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRPList.m; sourceTree = "<group>"; };
+		7FD90CA51E612CD300DF226B /* TRPDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRPDictionary.h; sourceTree = "<group>"; };
+		7FD90CA61E612CD300DF226B /* TRPDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRPDictionary.m; sourceTree = "<group>"; };
+		7FD90CAA1E61480B00DF226B /* TRPElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRPElement.h; sourceTree = "<group>"; };
+		7FD90CAB1E61480B00DF226B /* TRPElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRPElement.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +131,7 @@
 		7FD90C591E60E84600DF226B /* TorrentParser */ = {
 			isa = PBXGroup;
 			children = (
+				7FD90C971E612BE700DF226B /* Model */,
 				7FD90C5A1E60E84600DF226B /* AppDelegate.h */,
 				7FD90C5B1E60E84600DF226B /* AppDelegate.m */,
 				7FD90C601E60E84600DF226B /* ViewController.h */,
@@ -135,6 +168,37 @@
 				7FD90C7E1E60E84600DF226B /* Info.plist */,
 			);
 			path = TorrentParserUITests;
+			sourceTree = "<group>";
+		};
+		7FD90C971E612BE700DF226B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7FD90C981E612C7600DF226B /* BencodingTypes */,
+				7FD90C8A1E60EDCA00DF226B /* TRPParser.h */,
+				7FD90C8B1E60EDCA00DF226B /* TRPParser.m */,
+				7FD90C8E1E60EE2F00DF226B /* TRPTorrent.h */,
+				7FD90C8F1E60EE2F00DF226B /* TRPTorrent.m */,
+				7FD90C931E611A1000DF226B /* TRPFile.h */,
+				7FD90C941E611A1000DF226B /* TRPFile.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7FD90C981E612C7600DF226B /* BencodingTypes */ = {
+			isa = PBXGroup;
+			children = (
+				7FD90C991E612CA600DF226B /* TRPString.h */,
+				7FD90C9A1E612CA600DF226B /* TRPString.m */,
+				7FD90C9D1E612CB500DF226B /* TRPInteger.h */,
+				7FD90C9E1E612CB500DF226B /* TRPInteger.m */,
+				7FD90CA11E612CC100DF226B /* TRPList.h */,
+				7FD90CA21E612CC100DF226B /* TRPList.m */,
+				7FD90CA51E612CD300DF226B /* TRPDictionary.h */,
+				7FD90CA61E612CD300DF226B /* TRPDictionary.m */,
+				7FD90CAA1E61480B00DF226B /* TRPElement.h */,
+				7FD90CAB1E61480B00DF226B /* TRPElement.m */,
+			);
+			name = BencodingTypes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,9 +336,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FD90CA71E612CD300DF226B /* TRPDictionary.m in Sources */,
+				7FD90CAC1E61480B00DF226B /* TRPElement.m in Sources */,
 				7FD90C621E60E84600DF226B /* ViewController.m in Sources */,
 				7FD90C5F1E60E84600DF226B /* main.m in Sources */,
+				7FD90C9B1E612CA600DF226B /* TRPString.m in Sources */,
+				7FD90C9F1E612CB500DF226B /* TRPInteger.m in Sources */,
+				7FD90CA31E612CC100DF226B /* TRPList.m in Sources */,
+				7FD90C8C1E60EDCA00DF226B /* TRPParser.m in Sources */,
 				7FD90C5C1E60E84600DF226B /* AppDelegate.m in Sources */,
+				7FD90C951E611A1000DF226B /* TRPFile.m in Sources */,
+				7FD90C901E60EE2F00DF226B /* TRPTorrent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +354,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FD90CA41E612CC100DF226B /* TRPList.m in Sources */,
+				7FD90C8D1E60EDCA00DF226B /* TRPParser.m in Sources */,
+				7FD90CAD1E61480B00DF226B /* TRPElement.m in Sources */,
+				7FD90C9C1E612CA600DF226B /* TRPString.m in Sources */,
+				7FD90C911E60EE2F00DF226B /* TRPTorrent.m in Sources */,
+				7FD90C961E611A1000DF226B /* TRPFile.m in Sources */,
 				7FD90C721E60E84600DF226B /* TorrentParserTests.m in Sources */,
+				7FD90CA81E612CD300DF226B /* TRPDictionary.m in Sources */,
+				7FD90CA01E612CB500DF226B /* TRPInteger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "TRPParser.h"
+#import "TRPElement.h"
 
 @interface TorrentParserTests : XCTestCase
 
@@ -27,6 +29,15 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    NSString *data = @"d3:bar4:spam3:fooi42ee";
+    TRPElement *element = [TRPParser decodeWithData:data atIndex:0];
+    NSLog(@"%@", element);
+    XCTAssert([element.value isKindOfClass:[NSDictionary class]]);
+    
+    NSDictionary *dict = (NSDictionary *)element.value;
+    XCTAssert([dict[@"bar"] isEqualToString:@"spam"]);
+    XCTAssert([dict[@"foo"] isEqualToNumber:@(42)]);
 }
 
 - (void)testPerformanceExample {
