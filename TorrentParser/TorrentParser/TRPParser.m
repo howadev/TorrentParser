@@ -39,6 +39,7 @@
     while (![[data substringWithRange:NSMakeRange(index, 1)] isEqualToString:@"e"]) {
         TRPElement *element = [self decodeWithData:data atIndex:index];
         [array addObject:element.value];
+        index = element.index;
     }
     
     return [[TRPElement alloc] initWithValue:array toIndex:index + 1];
@@ -53,10 +54,14 @@
         TRPElement *keyElement = [self decodeStringWithData:data atIndex:index];
         NSString *key = (NSString *)keyElement.value;
         
-        TRPElement *valueElement = [self decodeWithData:data atIndex:keyElement.index];
-        dictionary[key] = valueElement.value;
-        
-        index = valueElement.index;
+        if ([key isEqualToString:@""] || [key isEqualToString:@"pieces"]) {
+            break;
+        } else {
+            TRPElement *valueElement = [self decodeWithData:data atIndex:keyElement.index];
+            dictionary[key] = valueElement.value;
+            
+            index = valueElement.index;
+        }
     }
     
     return [[TRPElement alloc] initWithValue:dictionary toIndex:index + 1];

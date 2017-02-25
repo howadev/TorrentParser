@@ -10,6 +10,6 @@
 
 @interface TRPFile : NSObject
 @property (nonatomic, retain) NSString *name;
-@property (nonatomic, assign) NSInteger length;
+@property (nonatomic, retain) NSNumber *length;
 @property (nonatomic, retain) NSString *checksum;
 @end

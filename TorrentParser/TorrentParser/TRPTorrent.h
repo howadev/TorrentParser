@@ -15,4 +15,7 @@
 @property (nonatomic, retain) NSString *creator;
 @property (nonatomic, retain) NSURL *trackerURL;
 @property (nonatomic, retain) NSArray<TRPFile *> *files;
+
+- (instancetype)initWithFileURL:(NSURL *)url;
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 @end

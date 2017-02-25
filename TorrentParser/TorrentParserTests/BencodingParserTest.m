@@ -1,5 +1,5 @@
 //
-//  ParserTest.m
+//  BencodingParserTest.m
 //  TorrentParser
 //
 //  Created by Haohua Li on 2017-02-25.
@@ -10,11 +10,11 @@
 #import "TRPParser.h"
 #import "TRPElement.h"
 
-@interface ParserTest : XCTestCase
+@interface BencodingParserTest : XCTestCase
 
 @end
 
-@implementation ParserTest
+@implementation BencodingParserTest
 
 - (void)setUp {
     [super setUp];

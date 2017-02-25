@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7FC7436E1E61D94800693B6E /* ParserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC7436B1E61CDD700693B6E /* ParserTest.m */; };
+		7FC7436E1E61D94800693B6E /* BencodingParserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC7436B1E61CDD700693B6E /* BencodingParserTest.m */; };
+		7FC743721E61E57D00693B6E /* TorrentParserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC743711E61E57D00693B6E /* TorrentParserTest.m */; };
+		7FC743771E621D9700693B6E /* Fedora-KDE-Live-x86_64-25.torrent in Resources */ = {isa = PBXBuildFile; fileRef = 7FC743741E621C4B00693B6E /* Fedora-KDE-Live-x86_64-25.torrent */; };
+		7FC743791E6221BE00693B6E /* debian-8.7.1-arm64-CD-1.iso.torrent in Resources */ = {isa = PBXBuildFile; fileRef = 7FC743781E6221BE00693B6E /* debian-8.7.1-arm64-CD-1.iso.torrent */; };
 		7FD90C5C1E60E84600DF226B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD90C5B1E60E84600DF226B /* AppDelegate.m */; };
 		7FD90C5F1E60E84600DF226B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD90C5E1E60E84600DF226B /* main.m */; };
 		7FD90C621E60E84600DF226B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD90C611E60E84600DF226B /* ViewController.m */; };
@@ -38,7 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7FC7436B1E61CDD700693B6E /* ParserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParserTest.m; sourceTree = "<group>"; };
+		7FC7436B1E61CDD700693B6E /* BencodingParserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BencodingParserTest.m; sourceTree = "<group>"; };
+		7FC743711E61E57D00693B6E /* TorrentParserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorrentParserTest.m; sourceTree = "<group>"; };
+		7FC743741E621C4B00693B6E /* Fedora-KDE-Live-x86_64-25.torrent */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fedora-KDE-Live-x86_64-25.torrent"; sourceTree = "<group>"; };
+		7FC743781E6221BE00693B6E /* debian-8.7.1-arm64-CD-1.iso.torrent */ = {isa = PBXFileReference; lastKnownFileType = file; path = "debian-8.7.1-arm64-CD-1.iso.torrent"; sourceTree = "<group>"; };
 		7FD90C571E60E84600DF226B /* TorrentParser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TorrentParser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD90C5A1E60E84600DF226B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7FD90C5B1E60E84600DF226B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -141,6 +147,8 @@
 				7FD90C631E60E84600DF226B /* Assets.xcassets */,
 				7FD90C651E60E84600DF226B /* Main.storyboard */,
 				7FD90C681E60E84600DF226B /* Info.plist */,
+				7FC743741E621C4B00693B6E /* Fedora-KDE-Live-x86_64-25.torrent */,
+				7FC743781E6221BE00693B6E /* debian-8.7.1-arm64-CD-1.iso.torrent */,
 				7FD90C5D1E60E84600DF226B /* Supporting Files */,
 			);
 			path = TorrentParser;
@@ -157,7 +165,8 @@
 		7FD90C701E60E84600DF226B /* TorrentParserTests */ = {
 			isa = PBXGroup;
 			children = (
-				7FC7436B1E61CDD700693B6E /* ParserTest.m */,
+				7FC7436B1E61CDD700693B6E /* BencodingParserTest.m */,
+				7FC743711E61E57D00693B6E /* TorrentParserTest.m */,
 				7FD90C731E60E84600DF226B /* Info.plist */,
 			);
 			path = TorrentParserTests;
@@ -291,7 +300,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FD90C641E60E84600DF226B /* Assets.xcassets in Resources */,
+				7FC743791E6221BE00693B6E /* debian-8.7.1-arm64-CD-1.iso.torrent in Resources */,
 				7FD90C671E60E84600DF226B /* Main.storyboard in Resources */,
+				7FC743771E621D9700693B6E /* Fedora-KDE-Live-x86_64-25.torrent in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +341,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FC7436E1E61D94800693B6E /* ParserTest.m in Sources */,
+				7FC7436E1E61D94800693B6E /* BencodingParserTest.m in Sources */,
+				7FC743721E61E57D00693B6E /* TorrentParserTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
