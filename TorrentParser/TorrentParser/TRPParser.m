@@ -12,6 +12,10 @@
 
 @implementation TRPParser
 
++ (TRPElement *)decodeWithData:(NSString *)data {
+    return [self decodeWithData:data atIndex:0];
+}
+
 + (TRPElement *)decodeWithData:(NSString *)data atIndex:(NSUInteger)index {
     NSString *s = [data substringWithRange:NSMakeRange(index, 1)];
     if ([s isEqualToString:@"l"]) {
@@ -34,7 +38,7 @@
     
     while (![[data substringWithRange:NSMakeRange(index, 1)] isEqualToString:@"e"]) {
         TRPElement *element = [self decodeWithData:data atIndex:index];
-        [array addObject:element];
+        [array addObject:element.value];
     }
     
     return [[TRPElement alloc] initWithValue:array toIndex:index + 1];

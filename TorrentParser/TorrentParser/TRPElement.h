@@ -12,5 +12,6 @@
 @property (nonatomic, retain) NSObject *value;
 @property (nonatomic, assign) NSUInteger index;
 
+- (instancetype)initWithValue:(NSObject *)value;
 - (instancetype)initWithValue:(NSObject *)value toIndex:(NSUInteger)index;
 @end

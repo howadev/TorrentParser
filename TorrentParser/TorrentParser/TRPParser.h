@@ -11,6 +11,7 @@
 @class TRPElement;
 
 @interface TRPParser : NSObject
++ (TRPElement *)decodeWithData:(NSString *)data;
 + (TRPElement *)decodeWithData:(NSString *)data atIndex:(NSUInteger)index;
 + (TRPElement *)decodeListWithData:(NSString *)data atIndex:(NSUInteger)index;
 + (TRPElement *)decodeDictionaryWithData:(NSString *)data atIndex:(NSUInteger)index;
