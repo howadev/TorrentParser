@@ -34,6 +34,10 @@
         
         NSDictionary *dictionary = (NSDictionary *)element.value;
         [self parseDictionary:dictionary];
+        
+        if (self.trackerURL == nil) {
+            return nil;
+        }
     }
     
     return self;
