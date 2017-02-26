@@ -160,9 +160,9 @@
     }
     
     if (self.files) {
-        NSString *title = @"File:\n";
+        NSString *title = @"[File]\n\n";
         if (self.files.count > 1) {
-            title = @"Files:\n";
+            title = @"[Files]\n\n";
         }
 
         [result appendString:title];
@@ -176,6 +176,9 @@
         }
         if (file.checksum) {
             [result appendString:[NSString stringWithFormat:@"Checksum: %@\n", file.checksum]];
+        }
+        if (file.name || file.length || file.checksum) {
+            [result appendString:@"\n"];
         }
     }
     

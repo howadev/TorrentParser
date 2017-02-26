@@ -27,6 +27,7 @@
 
 - (void)openDocument:(id)sender {
     NSOpenPanel* panel = [NSOpenPanel openPanel];
+    [panel setAllowsMultipleSelection:YES];
     
     __weak TRPWindowController *weakSelf = self;
     [panel beginWithCompletionHandler:^(NSInteger result){
@@ -35,12 +36,15 @@
             for (NSURL *localURL in [panel URLs]) {
                 TRPTorrent *torrent = [[TRPTorrent alloc] initWithFileURL:localURL];
                 [[strongSelf.sharedDataStore torrents] addObject:torrent];
-                [strongSelf.sharedDataStore setSelectionIndexes:[NSIndexSet indexSetWithIndex:strongSelf.sharedDataStore.torrents.count - 1]];
                 [strongSelf.contentViewController setRepresentedObject:strongSelf.sharedDataStore];
             }
         }
         
     }];
+}
+
+- (void)showHelp:(nullable id)sender {
+    [[NSWorkspace sharedWorkspace] openURL: [NSURL URLWithString:@"https://github.com/lihowadev/TorrentParser/issues"]];
 }
 
 @end
