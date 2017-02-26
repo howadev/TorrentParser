@@ -151,22 +151,26 @@
 - (NSString *)description {
     NSMutableString *result = [NSMutableString string];
     
+    [result appendString:@"[Info]\n\n"];
+    
     if (self.date) {
-        [result appendString:[NSString stringWithFormat:@"Creation Date: %@\n\n", self.date]];
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+        [result appendString:[NSString stringWithFormat:@"Creation Date: %@\n", [formatter stringFromDate:self.date]]];
     }
     
     if (self.creator) {
-        [result appendString:[NSString stringWithFormat:@"Created by: %@\n\n", self.creator]];
+        [result appendString:[NSString stringWithFormat:@"Created by: %@\n", self.creator]];
     }
     
     if (self.trackerURL) {
-        [result appendString:[NSString stringWithFormat:@"Tracker URL: %@\n\n", self.trackerURL]];
+        [result appendString:[NSString stringWithFormat:@"Tracker URL: %@\n", self.trackerURL]];
     }
     
     if (self.files) {
-        NSString *title = @"[File]\n\n";
+        NSString *title = @"\n[File]\n\n";
         if (self.files.count > 1) {
-            title = @"[Files]\n\n";
+            title = @"\n[Files]\n\n";
         }
 
         [result appendString:title];
@@ -176,7 +180,8 @@
             [result appendString:[NSString stringWithFormat:@"Name: %@\n", file.name]];
         }
         if (file.length) {
-            [result appendString:[NSString stringWithFormat:@"Length: %@\n", file.length]];
+            NSString *byteCount = [NSByteCountFormatter stringFromByteCount:file.length.integerValue countStyle:NSByteCountFormatterCountStyleFile];
+            [result appendString:[NSString stringWithFormat:@"Length: %@\n", byteCount]];
         }
         if (file.checksum) {
             [result appendString:[NSString stringWithFormat:@"Checksum: %@\n", file.checksum]];
