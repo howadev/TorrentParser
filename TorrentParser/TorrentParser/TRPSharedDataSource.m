@@ -26,6 +26,10 @@
         NSURL *fileURL2 = [NSURL fileURLWithPath:@"/Users/haohuali/Downloads/debian-8.7.1-arm64-CD-1.iso.torrent"];
         TRPTorrent *torrent2 = [[TRPTorrent alloc] initWithFileURL:fileURL2];
         [self.torrents addObject:torrent2];
+        
+        NSURL *fileURL3 = [NSURL fileURLWithPath:@"/Users/haohuali/Desktop/Fedora-KDE-Live-x86_64-25.torrent"];
+        TRPTorrent *torrent3 = [[TRPTorrent alloc] initWithFileURL:fileURL3];
+        [self.torrents addObject:torrent3];
     }
     return self;
 }

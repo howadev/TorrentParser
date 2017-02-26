@@ -795,6 +795,7 @@
                                             </tableColumns>
                                             <connections>
                                                 <binding destination="bqQ-Ka-OZ6" name="content" keyPath="arrangedObjects" id="XMW-cT-cxY"/>
+                                                <binding destination="bqQ-Ka-OZ6" name="selectionIndexes" keyPath="selectionIndexes" previousBinding="XMW-cT-cxY" id="pPt-tR-6fJ"/>
                                             </connections>
                                         </tableView>
                                     </subviews>
@@ -829,6 +830,7 @@
                 <arrayController id="bqQ-Ka-OZ6">
                     <connections>
                         <binding destination="Gkj-8B-AOe" name="contentArray" keyPath="representedObject.torrents" id="SiS-hx-cOT"/>
+                        <binding destination="Gkj-8B-AOe" name="selectionIndexes" keyPath="representedObject.selectionIndexes" id="AQv-XF-oDv"/>
                     </connections>
                 </arrayController>
             </objects>
@@ -851,6 +853,9 @@
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <connections>
+                                        <binding destination="pVR-bw-dua" name="value" keyPath="selection.description" id="QZn-NS-pYL"/>
+                                    </connections>
                                 </textFieldCell>
                             </textField>
                         </subviews>
@@ -863,6 +868,12 @@
                     </view>
                 </viewController>
                 <customObject id="iWJ-Ta-2KS" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <arrayController id="pVR-bw-dua">
+                    <connections>
+                        <binding destination="dEK-xj-MmM" name="contentArray" keyPath="representedObject.torrents" id="1Ju-jU-klE"/>
+                        <binding destination="dEK-xj-MmM" name="selectionIndexes" keyPath="representedObject.selectionIndexes" id="fGl-Tc-HOu"/>
+                    </connections>
+                </arrayController>
             </objects>
             <point key="canvasLocation" x="75" y="1096"/>
         </scene>

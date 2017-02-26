@@ -144,4 +144,42 @@
     }
 }
 
+- (NSString *)description {
+    NSMutableString *result = [NSMutableString string];
+    
+    if (self.date) {
+        [result appendString:[NSString stringWithFormat:@"Creation Date: %@\n\n", self.date]];
+    }
+    
+    if (self.creator) {
+        [result appendString:[NSString stringWithFormat:@"Created by: %@\n\n", self.creator]];
+    }
+    
+    if (self.trackerURL) {
+        [result appendString:[NSString stringWithFormat:@"Tracker URL: %@\n\n", self.trackerURL]];
+    }
+    
+    if (self.files) {
+        NSString *title = @"File:\n";
+        if (self.files.count > 1) {
+            title = @"Files:\n";
+        }
+
+        [result appendString:title];
+    }
+    for (TRPFile *file in self.files) {
+        if (file.name) {
+            [result appendString:[NSString stringWithFormat:@"Name: %@\n", file.name]];
+        }
+        if (file.length) {
+            [result appendString:[NSString stringWithFormat:@"Length: %@\n", file.length]];
+        }
+        if (file.checksum) {
+            [result appendString:[NSString stringWithFormat:@"Checksum: %@\n", file.checksum]];
+        }
+    }
+    
+    return result;
+}
+
 @end

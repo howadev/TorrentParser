@@ -11,4 +11,5 @@
 
 @interface TRPSharedDataSource : NSObject
 @property (nonatomic, retain) NSMutableArray<TRPTorrent *> *torrents;
+@property (nonatomic, retain) NSIndexSet *selectionIndexes;
 @end
