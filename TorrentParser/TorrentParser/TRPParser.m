@@ -54,7 +54,7 @@
         TRPElement *keyElement = [self decodeStringWithData:data atIndex:index];
         NSString *key = (NSString *)keyElement.value;
         
-        if ([key isEqualToString:@""] || [key isEqualToString:@"pieces"]) {
+        if ([key isEqualToString:@""]) {
             break;
         } else {
             TRPElement *valueElement = [self decodeWithData:data atIndex:keyElement.index];

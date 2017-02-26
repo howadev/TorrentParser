@@ -40,7 +40,7 @@
     XCTAssert(torrent.files.count == 1);
     
     TRPFile *first = torrent.files.firstObject;
-    XCTAssert([first.name isEqualToString:@"debian-8.7.1-arm64-CD-1.iso"]);
+    XCTAssert([first.name isEqualToString:@"ABCdebian-8.7.1-arm64-CD-1.iso"]);
     XCTAssert(first.length.integerValue == 678428672);
     XCTAssert(first.checksum == nil);
 }

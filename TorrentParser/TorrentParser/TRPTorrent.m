@@ -39,9 +39,36 @@
     
     NSMutableString *result = [NSMutableString string];
     
+    NSUInteger matchCount = 0;
+    NSString *pattern = @"6:pieces";
+    
     while (pointer < end) {
-        [result appendString:[NSString stringWithFormat:@"%c" , *pointer]];
+        NSString *charString = [NSString stringWithFormat:@"%c" , *pointer];
+        [result appendString:charString];
         pointer++;
+        
+        if (matchCount < pattern.length) {
+            if ([[pattern substringWithRange:NSMakeRange(matchCount, 1)] isEqualToString:charString]) {
+                matchCount++;
+                
+                if (matchCount == pattern.length) {
+                    result = [[result substringToIndex:result.length - pattern.length] mutableCopy];
+                    NSUInteger piecesLength = 0;
+                    while (pointer < end) {
+                        NSString *piecesChar = [NSString stringWithFormat:@"%c" , *pointer];
+                        if ([piecesChar isEqualToString:@":"]) {
+                            pointer = pointer + (piecesLength + 1);
+                            break;
+                        } else {
+                            piecesLength = piecesLength * 10 + piecesChar.integerValue;
+                            pointer++;
+                        }
+                    }
+                }
+            } else {
+                matchCount = 0;
+            }
+        }
     }
     
     return result;
