@@ -11,6 +11,8 @@
 @class TRPFile;
 
 @interface TRPTorrent : NSObject
+@property (nonatomic, retain) NSString *fileName;
+@property (nonatomic, retain) NSString *comment;
 @property (nonatomic, retain) NSDate *date;
 @property (nonatomic, retain) NSString *creator;
 @property (nonatomic, retain) NSURL *trackerURL;

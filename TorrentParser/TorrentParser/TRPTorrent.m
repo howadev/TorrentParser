@@ -14,21 +14,29 @@
 @implementation TRPTorrent
 
 - (instancetype)initWithFileURL:(NSURL *)url {
-    if (![url checkResourceIsReachableAndReturnError:nil]) {
-        return nil;
+    
+    self = [super init];
+    if (self) {
+        if (![url checkResourceIsReachableAndReturnError:nil]) {
+            return nil;
+        }
+        
+        self.fileName = url.lastPathComponent;
+        
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        NSString *encoded = [TRPTorrent parseData:data];
+        
+        TRPElement *element = [TRPParser decodeWithData:encoded];
+        
+        if (![element.value isKindOfClass:[NSDictionary class]]) {
+            return nil;
+        }
+        
+        NSDictionary *dictionary = (NSDictionary *)element.value;
+        [self parseDictionary:dictionary];
     }
     
-    NSData *data = [NSData dataWithContentsOfURL:url];
-    NSString *encoded = [TRPTorrent parseData:data];
-    
-    TRPElement *element = [TRPParser decodeWithData:encoded];
-
-    if (![element.value isKindOfClass:[NSDictionary class]]) {
-        return nil;
-    }
-    
-    NSDictionary *dictionary = (NSDictionary *)element.value;
-    return [self initWithDictionary:dictionary];
+    return self;
 }
 
 + (NSString *)parseData:(NSData *)data {
@@ -96,6 +104,11 @@
     NSString *announce = dictionary[@"announce"];
     if (announce) {
         self.trackerURL = [NSURL URLWithString:announce];
+    }
+    
+    NSString *comment = dictionary[@"comment"];
+    if (comment) {
+        self.comment = comment;
     }
     
     NSDictionary *info = dictionary[@"info"];

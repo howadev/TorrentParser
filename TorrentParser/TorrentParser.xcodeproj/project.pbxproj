@@ -11,6 +11,9 @@
 		7FC743721E61E57D00693B6E /* TorrentParserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC743711E61E57D00693B6E /* TorrentParserTest.m */; };
 		7FC743771E621D9700693B6E /* Fedora-KDE-Live-x86_64-25.torrent in Resources */ = {isa = PBXBuildFile; fileRef = 7FC743741E621C4B00693B6E /* Fedora-KDE-Live-x86_64-25.torrent */; };
 		7FC743791E6221BE00693B6E /* debian-8.7.1-arm64-CD-1.iso.torrent in Resources */ = {isa = PBXBuildFile; fileRef = 7FC743781E6221BE00693B6E /* debian-8.7.1-arm64-CD-1.iso.torrent */; };
+		7FC7437E1E627F7C00693B6E /* TRPSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC7437D1E627F7C00693B6E /* TRPSplitViewController.m */; };
+		7FC743811E62899B00693B6E /* TRPWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC743801E62899B00693B6E /* TRPWindowController.m */; };
+		7FC743841E628A7400693B6E /* TRPSharedDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC743831E628A7400693B6E /* TRPSharedDataSource.m */; };
 		7FD90C5C1E60E84600DF226B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD90C5B1E60E84600DF226B /* AppDelegate.m */; };
 		7FD90C5F1E60E84600DF226B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD90C5E1E60E84600DF226B /* main.m */; };
 		7FD90C621E60E84600DF226B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD90C611E60E84600DF226B /* ViewController.m */; };
@@ -45,6 +48,12 @@
 		7FC743711E61E57D00693B6E /* TorrentParserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorrentParserTest.m; sourceTree = "<group>"; };
 		7FC743741E621C4B00693B6E /* Fedora-KDE-Live-x86_64-25.torrent */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fedora-KDE-Live-x86_64-25.torrent"; sourceTree = "<group>"; };
 		7FC743781E6221BE00693B6E /* debian-8.7.1-arm64-CD-1.iso.torrent */ = {isa = PBXFileReference; lastKnownFileType = file; path = "debian-8.7.1-arm64-CD-1.iso.torrent"; sourceTree = "<group>"; };
+		7FC7437C1E627F7C00693B6E /* TRPSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRPSplitViewController.h; sourceTree = "<group>"; };
+		7FC7437D1E627F7C00693B6E /* TRPSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRPSplitViewController.m; sourceTree = "<group>"; };
+		7FC7437F1E62899B00693B6E /* TRPWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRPWindowController.h; path = ../TRPWindowController.h; sourceTree = "<group>"; };
+		7FC743801E62899B00693B6E /* TRPWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRPWindowController.m; path = ../TRPWindowController.m; sourceTree = "<group>"; };
+		7FC743821E628A7400693B6E /* TRPSharedDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRPSharedDataSource.h; sourceTree = "<group>"; };
+		7FC743831E628A7400693B6E /* TRPSharedDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRPSharedDataSource.m; sourceTree = "<group>"; };
 		7FD90C571E60E84600DF226B /* TorrentParser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TorrentParser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD90C5A1E60E84600DF226B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7FD90C5B1E60E84600DF226B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -144,6 +153,10 @@
 				7FD90C5B1E60E84600DF226B /* AppDelegate.m */,
 				7FD90C601E60E84600DF226B /* ViewController.h */,
 				7FD90C611E60E84600DF226B /* ViewController.m */,
+				7FC7437C1E627F7C00693B6E /* TRPSplitViewController.h */,
+				7FC7437D1E627F7C00693B6E /* TRPSplitViewController.m */,
+				7FC7437F1E62899B00693B6E /* TRPWindowController.h */,
+				7FC743801E62899B00693B6E /* TRPWindowController.m */,
 				7FD90C631E60E84600DF226B /* Assets.xcassets */,
 				7FD90C651E60E84600DF226B /* Main.storyboard */,
 				7FD90C681E60E84600DF226B /* Info.plist */,
@@ -184,6 +197,8 @@
 		7FD90C971E612BE700DF226B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7FC743821E628A7400693B6E /* TRPSharedDataSource.h */,
+				7FC743831E628A7400693B6E /* TRPSharedDataSource.m */,
 				7FC743701E61DBBB00693B6E /* Parser */,
 				7FC7436F1E61DBB200693B6E /* Torrent */,
 			);
@@ -331,9 +346,12 @@
 				7FD90C621E60E84600DF226B /* ViewController.m in Sources */,
 				7FD90C5F1E60E84600DF226B /* main.m in Sources */,
 				7FD90C8C1E60EDCA00DF226B /* TRPParser.m in Sources */,
+				7FC7437E1E627F7C00693B6E /* TRPSplitViewController.m in Sources */,
 				7FD90C5C1E60E84600DF226B /* AppDelegate.m in Sources */,
 				7FD90C951E611A1000DF226B /* TRPFile.m in Sources */,
 				7FD90C901E60EE2F00DF226B /* TRPTorrent.m in Sources */,
+				7FC743841E628A7400693B6E /* TRPSharedDataSource.m in Sources */,
+				7FC743811E62899B00693B6E /* TRPWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
