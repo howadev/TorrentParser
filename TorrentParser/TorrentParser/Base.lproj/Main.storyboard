@@ -829,8 +829,8 @@
                 <customObject id="dhv-j0-GaC" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <arrayController id="bqQ-Ka-OZ6">
                     <connections>
-                        <binding destination="Gkj-8B-AOe" name="contentArray" keyPath="representedObject.torrents" id="SiS-hx-cOT"/>
                         <binding destination="Gkj-8B-AOe" name="selectionIndexes" keyPath="representedObject.selectionIndexes" id="AQv-XF-oDv"/>
+                        <binding destination="Gkj-8B-AOe" name="contentArray" keyPath="representedObject.torrents" id="SiS-hx-cOT"/>
                     </connections>
                 </arrayController>
             </objects>
@@ -870,8 +870,8 @@
                 <customObject id="iWJ-Ta-2KS" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <arrayController id="pVR-bw-dua">
                     <connections>
-                        <binding destination="dEK-xj-MmM" name="contentArray" keyPath="representedObject.torrents" id="1Ju-jU-klE"/>
                         <binding destination="dEK-xj-MmM" name="selectionIndexes" keyPath="representedObject.selectionIndexes" id="fGl-Tc-HOu"/>
+                        <binding destination="dEK-xj-MmM" name="contentArray" keyPath="representedObject.torrents" id="1Ju-jU-klE"/>
                     </connections>
                 </arrayController>
             </objects>
