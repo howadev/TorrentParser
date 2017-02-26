@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F5C2D661E633221003CA6A3 /* QQ8.7.exe.torrent in Resources */ = {isa = PBXBuildFile; fileRef = 7F5C2D651E633221003CA6A3 /* QQ8.7.exe.torrent */; };
 		7FC7436E1E61D94800693B6E /* BencodingParserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC7436B1E61CDD700693B6E /* BencodingParserTest.m */; };
 		7FC743721E61E57D00693B6E /* TorrentParserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC743711E61E57D00693B6E /* TorrentParserTest.m */; };
 		7FC743771E621D9700693B6E /* Fedora-KDE-Live-x86_64-25.torrent in Resources */ = {isa = PBXBuildFile; fileRef = 7FC743741E621C4B00693B6E /* Fedora-KDE-Live-x86_64-25.torrent */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F5C2D651E633221003CA6A3 /* QQ8.7.exe.torrent */ = {isa = PBXFileReference; lastKnownFileType = file; path = QQ8.7.exe.torrent; sourceTree = "<group>"; };
 		7FC7436B1E61CDD700693B6E /* BencodingParserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BencodingParserTest.m; sourceTree = "<group>"; };
 		7FC743711E61E57D00693B6E /* TorrentParserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorrentParserTest.m; sourceTree = "<group>"; };
 		7FC743741E621C4B00693B6E /* Fedora-KDE-Live-x86_64-25.torrent */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fedora-KDE-Live-x86_64-25.torrent"; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				7FD90C681E60E84600DF226B /* Info.plist */,
 				7FC743741E621C4B00693B6E /* Fedora-KDE-Live-x86_64-25.torrent */,
 				7FC743781E6221BE00693B6E /* debian-8.7.1-arm64-CD-1.iso.torrent */,
+				7F5C2D651E633221003CA6A3 /* QQ8.7.exe.torrent */,
 				7FD90C5D1E60E84600DF226B /* Supporting Files */,
 			);
 			path = TorrentParser;
@@ -317,6 +320,7 @@
 				7FD90C641E60E84600DF226B /* Assets.xcassets in Resources */,
 				7FC743791E6221BE00693B6E /* debian-8.7.1-arm64-CD-1.iso.torrent in Resources */,
 				7FD90C671E60E84600DF226B /* Main.storyboard in Resources */,
+				7F5C2D661E633221003CA6A3 /* QQ8.7.exe.torrent in Resources */,
 				7FC743771E621D9700693B6E /* Fedora-KDE-Live-x86_64-25.torrent in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -26,6 +26,18 @@
     [super tearDown];
 }
 
+- (void)testChecksum {
+    NSURL *fileURL = [[NSBundle mainBundle] URLForResource: @"QQ8.7.exe" withExtension:@"torrent"];
+    TRPTorrent *torrent = [[TRPTorrent alloc] initWithFileURL:fileURL];
+    
+    XCTAssert(torrent.files.count == 1);
+    
+    TRPFile *first = torrent.files.firstObject;
+    XCTAssert([first.name isEqualToString:@"QQ8.7.exe"]);
+    XCTAssert(first.length.integerValue == 59006272);
+    XCTAssert([first.checksum isEqualToString:@"5861fff0e082cabbfff6ae5532765f57"]);
+}
+
 - (void)testSingleFile {
     
     NSURL *fileURL = [[NSBundle mainBundle] URLForResource: @"debian-8.7.1-arm64-CD-1.iso" withExtension:@"torrent"];
