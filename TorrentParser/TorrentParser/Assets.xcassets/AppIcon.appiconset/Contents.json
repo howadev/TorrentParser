@@ -33,22 +33,25 @@
     {
       "size" : "256x256",
       "idiom" : "mac",
-      "filename" : "TorrentParserIcon.png",
+      "filename" : "TorrentParserIcon256.png",
       "scale" : "1x"
     },
     {
-      "idiom" : "mac",
       "size" : "256x256",
+      "idiom" : "mac",
+      "filename" : "TorrentParserIcon256@2x.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "mac",
       "size" : "512x512",
+      "idiom" : "mac",
+      "filename" : "TorrentParserIcon512.png",
       "scale" : "1x"
     },
     {
-      "idiom" : "mac",
       "size" : "512x512",
+      "idiom" : "mac",
+      "filename" : "TorrentParserIcon512@2x.png",
       "scale" : "2x"
     }
   ],
